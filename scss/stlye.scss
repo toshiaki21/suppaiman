@@ -7,15 +7,19 @@
   display: flex;
   align-items: center;
 
-  &_left {
-    font-size: 50px;
-  }
-
   img {
     height: 100px;
     margin: 0 350px;
-
   }
+
+}
+.header_left{
+    font-size: 40px;
+    display: flex;
+
+    i{
+      margin: 0 auto;
+    }
 }
 
 .het_container {

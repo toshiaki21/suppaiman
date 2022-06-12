@@ -4,13 +4,18 @@
   align-items: center;
 }
 
-.header_left {
-  font-size: 50px;
-}
-
 .header img {
   height: 100px;
   margin: 0 350px;
+}
+
+.header_left {
+  font-size: 40px;
+  display: flex;
+}
+
+.header_left i {
+  margin: 0 auto;
 }
 
 .het_container {
