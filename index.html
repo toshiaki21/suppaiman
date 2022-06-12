@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1feb35784a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/stlye.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <title>heatstroke</title>
 
 </head>
@@ -56,33 +60,50 @@
 
  <section>   <!-- 4,おすすめアイテム -->
     <h2>おすすめアイテム</h2>
-
-    <p>
-        <h3>その１　経口補水液</h3>
-        経口補水液は糖分が少なく塩分を多く含むのが特徴。脱水症状になったときに効率よくナトリウムと水分を補給することができるアイテムです。<br>
-        ナトリウムが不足していると、体の中に水分を溜め込んでおくことができません。<br>脱水症状はナトリウムと水分が減ってしまっている状態なので、経口補水液で必要な水分を補いましょう。
-        <br>経口補水液の作り方<br>
-         ◯ 材料<br>
-            ・水 500ml<br>
-            ・塩 1.5g<br>
-            ・砂糖 20g<br>
-            このレシピを基本としつつ、砂糖の代わりにミネラルやビタミンを多く含むはちみつ（大さじ1）を入れたり、<br>クエン酸が豊富なレモン汁を入れたりといったアレンジを加えてもOKです。<br>
-            そして経口補水液を作ったら、その日のうちに飲み切ることも大切です。
-            <br>     
-      </p>
-
-      <p>
-        <h3>その２　梅干し</h3>
-        梅にはカリウム、マグネシウム、リンといったミネラルが豊富に含まれています。<br>さらに、梅干しに加工することで塩分も充分に含みます。そのため、熱中症に梅干しを食べるの理に叶ったことです。<br>梅干しにはクエン酸も含まれており、夏バテにも効果大です。
-       
-        <br>
-        梅干し水のレシピ<br>
-        ◯材料<br>
-        ・水500mLから1L<br>
-        ・梅干し1粒<br>
-        ・大さじ1杯の蜂蜜<br>
-        梅干しと蜂蜜だけでは、爽やかさに欠けると感じる方は、<br>クエン酸が多いレモンを加えてみても良いでしょう。
-      </p>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://askul.c.yimg.jp/img/product/3L1/2176390_3L1.jpg" class="card-img-top" alt="os-1">
+              <div class="card-body">
+                <h5 class="card-title">経口補水液</h5>
+                <p class="card-text">経口補水液は糖分が少なく塩分を多く含むのが特徴。脱水症状になったときに効率よくナトリウムと水分を補給することができるアイテムです。<br>
+                  ナトリウムが不足していると、体の中に水分を溜め込んでおくことができません。<br>脱水症状はナトリウムと水分が減ってしまっている状態なので、経口補水液で必要な水分を補いましょう。</p>
+                <a href="https://www.os-1.jp/" type="button" class="btn btn-primary">経口補水液 OS-1</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.kabaya.co.jp/catalog/chargetablets/img/kvmain_img_pc.webp" class="card-img-top" alt="tablet">
+              <div class="card-body">
+                <h5 class="card-title">タブレット</h5>
+                <p class="card-text">暑い日は汗で多くの水分・塩分が失われます。<br>
+                  そんな時、重要なのはこまめな水分補給と塩分補給です。<br>
+                  塩分チャージタブレッツはそんな塩分をいつでもおいしく、すばやくチャージできるタブレットです。</p>
+                  <a href="https://www.kabaya.co.jp/catalog/chargetablets/" type="button" class="btn btn-primary">塩分チャージ</a>  
+                <!-- <button type="button" class="btn btn-secondary">塩分チャージ</button> -->
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://img.my-best.com/content_section/choice_component/sub_contents/a557cd6a3c76af87748ba3503c40c637?ixlib=rails-4.2.0&q=70&lossless=0&w=690&fit=max&s=0edaab70eca79ebf7f633ecb704b1bc3" alt="タオル">
+              <div class="card-body">
+                <h5 class="card-title">冷感タオル</h5>
+                <p class="card-text">冷感タオルは、濡らす・絞る・振る3ステップで簡単にひんやり感を得られるアイテムです。 <br>冷感タオルの一部の商品には、濡らさずに触るだけで<br>ひんやりする接触冷感機能が付いているものもあります。<br>1枚持っておけば、暑い季節にマルチに活躍してくれるでしょう。</p>
+                <a href="https://my-best.com/3178" type="button" class="btn btn-primary">冷感タオルおすすめ21選</a>  
+                <!-- <button type="button" class="btn btn-success">Success</button> -->
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      
+      
+      </div>
 
 
  </section>
