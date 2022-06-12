@@ -1,0 +1,44 @@
+// *{
+//     // border: solid 1px black;
+// }
+
+.header{
+  height: 150px;
+  display: flex;
+  align-items: center;
+
+
+  .header_left{
+      font-size: 50px;
+  }
+
+  img{
+      height: 100px;
+      margin: 0 350px;
+      
+  }
+}
+.het_container{
+  display: flex;
+  
+  .hetCause{
+      height: 300px;
+      width: 300px;
+      margin: 0 auto;
+  }
+}
+
+.menubtn{
+  display: flex;
+  justify-content: center;
+
+  p{
+      margin: 0 30px;
+  }
+
+}
+
+.img{
+  height: 800px;
+  margin: 0 auto;
+}
