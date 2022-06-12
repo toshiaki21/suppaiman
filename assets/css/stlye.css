@@ -1,0 +1,39 @@
+.header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.header .header_left {
+  font-size: 50px;
+}
+
+.header img {
+  height: 100px;
+  margin: 0 350px;
+}
+
+.het_container {
+  display: flex;
+}
+
+.het_container .hetCause {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.menubtn {
+  display: flex;
+  justify-content: center;
+}
+
+.menubtn p {
+  margin: 0 30px;
+}
+
+.img {
+  height: 800px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=stlye.css.map */
