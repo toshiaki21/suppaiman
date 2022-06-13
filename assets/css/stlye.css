@@ -247,6 +247,12 @@
   margin-left: 50px;
 }
 
+.go-top-btn {
+  color: whitesmoke;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
 /*!
  * pagepiling.js 1.5.6
  *

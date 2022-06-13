@@ -25,6 +25,12 @@ $(function () {
     scrollingSpeed: 500,
   });
 
+ 
+  // go to top 
+  $('.go-top-btn').on('click',function(){
+    $('html,body').animate({'scrollTop':0},1000); 
+   })
+
 
 
 // 大外のカッコ
