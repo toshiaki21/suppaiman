@@ -105,6 +105,15 @@
 }
 
 .container {
-  margin-top: 30px;
+  margin: 50px 50px;
+}
+
+.suppai-container {
+  display: flex;
+  margin: 30px 30px 30px 30px;
+}
+
+.suppai-container .suppai-right {
+  margin-left: 50px;
 }
 /*# sourceMappingURL=stlye.css.map */
