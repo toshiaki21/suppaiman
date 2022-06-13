@@ -10,12 +10,13 @@
 }
 
 .header_left {
-  font-size: 50px;
+  font-size: 40px;
   display: flex;
 }
 
 .header_left i {
-  margin: 0 auto;
+  margin: 0 5px;
+  color: blue;
 }
 
 .menubtn {
@@ -31,19 +32,29 @@
 }
 
 .het_container {
+  height: 100vh;
   display: flex;
+  justify-content: center;
 }
 
 .het_container .hetCause {
   border: solid 1px black;
+  border-radius: 20px;
   height: 300px;
   width: 300px;
   margin: 0 auto;
 }
 
-.img {
-  height: 800px;
-  margin: 0 auto;
+.het_container img {
+  height: 300px;
+}
+
+.ntumain {
+  border: solid 1px black;
+}
+
+.ntumain img {
+  height: 200px;
 }
 
 .container {
