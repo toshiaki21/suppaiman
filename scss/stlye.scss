@@ -38,29 +38,72 @@
 
 // 1,熱中症とは？原因
 .bg{
-  background-image: url(../img/sun.jpeg);
-  background-size: cover;
+  text-align: center;
 }
 
 .het_container {
   border: solid 1px black;
-
   height: 100vh;
   display: flex;
   justify-content: center;
-
-  .hetCause {
-    border: solid 1px black;
-    border-radius: 20px;
-    height: 300px;
-    width: 300px;
-    margin: 0 auto;
-  }
-
+  
   img {
     height: 300px;
   }
 }
+
+.hetCause {
+  border: solid 1px black;
+  border-radius: 20px;
+  height: 500px;
+  width: 300px;
+  padding: 30px 20px;
+
+  .question,.answer{
+    border: solid 1px blue;
+    border-radius: 10px;
+    background-color: aquamarine;
+    height: 50px;
+    width: 250px;
+  }
+  .question{
+    position: relative;
+    cursor: default;
+}
+
+.question::after,.question::before{
+    content: '';
+    // display: block;
+    background-color: blue;
+    position: absolute;
+}
+
+.question::after{
+    width: 20px;
+    height: 2px;
+    right: 10px;
+    top: 50%;
+  }
+  
+
+.question::before{
+    width: 2px;
+    height: 20px;
+    right: 19px;
+    top: 36%;
+  }
+
+.question.on::before{
+    display: none;
+  }
+
+.answer{
+    display: none;
+    background-color: rgb(183, 181, 87);
+}
+}
+
+
 
 // 2,熱中症になってしまったら
 .ntumain {
