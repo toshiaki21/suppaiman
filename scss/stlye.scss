@@ -1,8 +1,10 @@
 // ヘッダー 
 .header {
-  height: 150px;
+  height: 100px;
   display: flex;
   align-items: center;
+  padding: 20px;
+  width: 100vw;
 
   img {
     height: 100px;
@@ -25,147 +27,244 @@
 .menubtn {
   display: flex;
   justify-content: center;
-  font-size: 20px;
+  font-size: 15px;
   height: 30px;
   background-color: rgb(0, 195, 255);
 
-  p {
-    margin: 0 30px;
+  a {
+    margin: 0 10px;
+    padding: 5px;
+    color: #fff;
   }
 
 }
 
-
 // 1,熱中症とは？原因
-.main_cause{
+.main_cause {
+  padding: 20px 30px;
+  height: 85vh;
   display: flex;
-  padding: 30px;
-  height: 100vh;
 
-  p{
+  &-pt {
+    height: 600px;
+
+  }
+}
+
+.bg {
+  text-align: center;
+
+  img {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  p {
     font-size: 20px;
     font-weight: 400;
   }
 }
 
-.bg{
-  text-align: center;
-
-
-  img {
-    height: 300px;
-    margin-bottom: 20px;
-  }
-  
-}
-
 .het_container {
   // border: solid 1px black;
   display: flex;
-  justify-content: space-around;
-  
+  justify-content: center;
+  height: 320px;
+
 }
 
 .hetCause,
-.hetCause-yellow,
-.hetCause-pink{
+.hetCause-body,
+.hetCause-action {
   border: solid 1px black;
+  background-color: rgb(25, 211, 195);
   border-radius: 20px;
-  height: 400px;
+  height: 300px;
   width: 300px;
-  padding: 30px 30px;
+  padding: 20px 30px;
+  margin: 0 30px;
+
+  .fa-solid {
+    color: green;
+  }
+
 }
 
-.hetCause{
-  &-yellow{
-    background-color: yellow;
-  }
-  &-pink{
-    background-color: pink;
-  }
-}
+.question {
+  position: relative;
+  cursor: default;
+  border: solid 1px blue;
+  border-radius: 10px;
+  background-color: orange;
+  height: 40px;
+  width: 250px;
+  padding: 5px;
+  margin: 5px auto;
+  font-size: 20px;
+  font-weight: bold;
 
-  .question,.answer{
-    border: solid 1px blue;
-    border-radius: 10px;
-    background-color: aquamarine;
-    height: 50px;
-    width: 250px;
-    padding: 10px;
-    font-weight: bold;
-    
-  }
-  .question{
-    position: relative;
-    cursor: default;
-}
-
-.question::after,.question::before{
+  &::after {
+    width: 20px;
+    height: 2px;
+    right: 10px;
+    top: 45%;
     content: '';
     display: block;
     background-color: blue;
     position: absolute;
-}
-
-.question::after{
-    width: 20px;
-    height: 2px;
-    right: 10px;
-    top: 50%;
   }
-  
 
-.question::before{
+  &::before {
     width: 2px;
     height: 20px;
     right: 19px;
-    top: 36%;
+    top: 25%;
+    content: '';
+    display: block;
+    background-color: blue;
+    position: absolute;
   }
-
-.question.on::before{
-    display: none;
-  }
-
-.answer{
-    display: none;
-    background-color: rgb(183, 181, 87);
 }
 
+.answer {
+  display: none;
+  background-color: rgb(230, 227, 63);
+  border: solid 1px blue;
+  border-radius: 10px;
+  height: 200px;
+  width: 250px;
+  padding: 10px;
+  margin: 5px auto;
+  font-weight: bold;
+}
 
+.question.on::before {
+  display: none;
+}
 
 // 2,熱中症になってしまったら
-.ntu-main {
-  margin-top: 50px;
-  border: solid 1px black;
-  height: 100vh;
+.ntu {
+  &-main {
+    margin-top: 50px;
+    border: solid 1px black;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../img/sun.jpeg);
+    background-size: cover;
+    position: relative;
 
-  img {
-    height: 200px;
+    &-1 {
+      position: absolute;
+      height: 300px;
+      left: 2%;
+      transform: scale(-1, 1);
+      top: -5%
+    }
+
+    &-2 {
+      position: absolute;
+      height: 150px;
+      left: 5%;
+      top: 72%;
+      transform: scale(-1, 1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: 900;
+    }
+  }
+
+  &-slick {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    left: 5%;
+    top: 35%;
     // margin: 0 100px;
-
-
   }
 }
 
+// 重症度分類
+.nts-severity {
+  border: solid 1px black;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin: 0 50px 0 700px;
 
+  &-question {
+    position: relative;
+    cursor: default;
+    border: solid 1px blue;
+    border-radius: 10px;
+    background-color: orange;
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+    margin: 5px auto;
+    font-size: 20px;
+    font-weight: bold;
+ 
+  }
 
-// Bootstrap
-.container {
-  margin:50px 50px;
-}
+    &::after {
+      width: 20px;
+      height: 2px;
+      right: 10px;
+      top: 45%;
+      content: '';
+      display: block;
+      background-color: blue;
+      position: absolute;
+    }
 
-// suppaiman
-.suppai-container{
-  display: flex;
-  margin:30px 30px 30px 30px;
+    &::before {
+      width: 2px;
+      height: 20px;
+      right: 19px;
+      top: 25%;
+      content: '';
+      display: block;
+      background-color: blue;
+      position: absolute;
+    }
+  }
 
-.suppai-right{
- margin-left: 50px;
-}
-}
+  &-list {
+    display: none;
+    background-color: rgb(230, 227, 63);
+    border: solid 1px blue;
+    border-radius: 10px;
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+    margin: 5px auto;
+    font-weight: bold;
+  }
 
-// pagepiling
-/*!
+  .nts-severity-question.on::before {
+    display: none;
+  }
+  
+    // Bootstrap
+    .container {
+      margin: 50px 50px;
+    }
+
+    // suppaiman
+    .suppai-container {
+      display: flex;
+      margin: 30px 30px 30px 30px;
+
+      .suppai-right {
+        margin-left: 50px;
+      }
+    }
+
+    // pagepiling
+    /*!
  * pagepiling.js 1.5.6
  *
  * https://github.com/alvarotrigo/pagePiling.js
@@ -173,126 +272,147 @@
  *
  * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
  */
- html, body {
-  overflow:hidden;
-  margin:0;
-  padding:0;
+    html,
+    body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
 
-  /*Avoid flicker on slides transitions for mobile phones #336 */
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-.pp-section {
-  height:100%;
-  position:absolute;
-  width:100%;
-  
-  /* fixes flickering in firefox*/
-  backface-visibility: hidden; 
-}
-.pp-easing {
-  -webkit-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -moz-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -o-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  /* custom */
-  -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  /* custom */
-}
-#pp-nav {
-  position: fixed;
-  z-index: 100;
-  margin-top: -32px;
-  top: 50%;
-  opacity: 1;
-}
-#pp-nav.right {
-  right: 17px;
-}
-#pp-nav.left {
-  left: 17px;
-}
-.pp-section.pp-table{
-  display: table;
-}
-.pp-tableCell {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-}
-.pp-slidesNav{
-  position: absolute;
-  z-index: 4;
-  left: 50%;
-  opacity: 1;
-}
-.pp-slidesNav.bottom {
-  bottom: 17px;
-}
-.pp-slidesNav.top {
-  top: 17px;
-}
-#pp-nav ul,
-.pp-slidesNav ul {
-margin: 0;
-padding: 0;
-}
-#pp-nav li,
-.pp-slidesNav li {
-  display: block;
-  width: 14px;
-  height: 13px;
-  margin: 7px;
-  position:relative;
-}
-.pp-slidesNav li {
-  display: inline-block;
-}
-#pp-nav li a,
-.pp-slidesNav li a {
-  display: block;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  text-decoration: none;
-}
-#pp-nav li .active span,
-.pp-slidesNav .active span {
-  background: #333;
-}
-#pp-nav span,
-.pp-slidesNav span {
-  top: 2px;
-  left: 2px;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #000;
-  background: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-}
-.pp-tooltip {
-  position: absolute;
-  top: -2px;
-  color: #fff;
-  font-size: 14px;
-  font-family: arial, helvetica, sans-serif;
-  white-space: nowrap;
-  max-width: 220px;
-}
-.pp-tooltip.right {
-  right: 20px;
-}
-.pp-tooltip.left {
-  left: 20px;
-}
-.pp-scrollable{
-  overflow-y: scroll;
-  height: 100%;
-}
+      /*Avoid flicker on slides transitions for mobile phones #336 */
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .pp-section {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+
+      /* fixes flickering in firefox*/
+      backface-visibility: hidden;
+    }
+
+    .pp-easing {
+      -webkit-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+      -moz-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+      -o-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+      transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+      /* custom */
+      -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+      -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+      -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+      transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+      /* custom */
+    }
+
+    #pp-nav {
+      position: fixed;
+      z-index: 100;
+      margin-top: -32px;
+      top: 50%;
+      opacity: 1;
+    }
+
+    #pp-nav.right {
+      right: 17px;
+    }
+
+    #pp-nav.left {
+      left: 17px;
+    }
+
+    .pp-section.pp-table {
+      display: table;
+    }
+
+    .pp-tableCell {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      height: 100%;
+    }
+
+    .pp-slidesNav {
+      position: absolute;
+      z-index: 4;
+      left: 50%;
+      opacity: 1;
+    }
+
+    .pp-slidesNav.bottom {
+      bottom: 17px;
+    }
+
+    .pp-slidesNav.top {
+      top: 17px;
+    }
+
+    #pp-nav ul,
+    .pp-slidesNav ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    #pp-nav li,
+    .pp-slidesNav li {
+      display: block;
+      width: 14px;
+      height: 13px;
+      margin: 7px;
+      position: relative;
+    }
+
+    .pp-slidesNav li {
+      display: inline-block;
+    }
+
+    #pp-nav li a,
+    .pp-slidesNav li a {
+      display: block;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    #pp-nav li .active span,
+    .pp-slidesNav .active span {
+      background: #333;
+    }
+
+    #pp-nav span,
+    .pp-slidesNav span {
+      top: 2px;
+      left: 2px;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #000;
+      background: rgba(0, 0, 0, 0);
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .pp-tooltip {
+      position: absolute;
+      top: -2px;
+      color: #fff;
+      font-size: 14px;
+      font-family: arial, helvetica, sans-serif;
+      white-space: nowrap;
+      max-width: 220px;
+    }
+
+    .pp-tooltip.right {
+      right: 20px;
+    }
+
+    .pp-tooltip.left {
+      left: 20px;
+    }
+
+    .pp-scrollable {
+      overflow-y: scroll;
+      height: 100%;
+    }

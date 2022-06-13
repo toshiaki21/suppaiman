@@ -4,14 +4,12 @@ $(function () {
   $(".question").on("click", function () {
     $(this).next().slideToggle();
     $(this).toggleClass('on');
-  })
-
-  console.log('Hello world');
+  })  
 
   $('#pagepiling').pagepiling({
     sectionSelector: '.section',
     menu: '#menu',
-    // anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+    anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
     navigation: {
       'position': 'right',
       'tooltips': ['section1', 'section2', 'section3', 'section4', 'section5']
@@ -19,7 +17,7 @@ $(function () {
     scrollingSpeed: 500,
   });
 
-
+$(".ntu-slick").slick();
 
 // 大外のカッコ
 });

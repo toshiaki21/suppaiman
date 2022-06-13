@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/1feb35784a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./assets/css/stlye.css">
 
@@ -39,15 +42,16 @@
       </header>
       <!-- メニューボタン -->
       <menu class="menubtn">
-        <p>熱中症とは？</p>
-        <p>熱中症になってしまったら</p>
-        <p>熱中症予防</p>
-        <p>熱中症予防おすすめアイテム</p>
+        <a href="#main_cause">熱中症とは？</a>
+        <a href="#ntu-main">熱中症になってしまったら</a>
+        <a href="#prevention-main">熱中症予防</a>
+        <a href="#container">熱中症予防おすすめアイテム</a>
+        <a href="#suppai-container">一押しアイテム</a>
       </menu>
 
       <!-- 1,熱中症とは？原因 -->
       <section class="main_cause">
-        <img src="./img/ntslogo2.png" alt="ntslogo2">
+        <img class="main_cause-pt" src="./img/logotate.png" alt="ntslogo2">
 
         <div class="bg">
           <p>熱中症とは、高温多湿な環境に長時間いることで、体温調節 機能がうまく働かなくなり、体内に熱がこもった状態</p>
@@ -55,34 +59,23 @@
           <div class="het_container">
 
             <ul class="hetCause">
-              <h3>軽症</h3>
-              <li class="question"></li>
-              <li class="answer"></li>
-              <li class="question"></li>
-              <li class="answer"></li>
-              <li class="question"></li>
-              <li class="answer"></li>
+              <li class="question">環境　<i class="fa-solid fa-seedling"></i></li>
+              <li class="answer">
+                気温が高い<br>湿度が高い<br>日差しが強い<br>締め切った屋内<br>エアコンのない部屋</li>
             </ul>
 
-
-            <ul class="hetCause-yellow">
-              <h3>中等症</h3>
-              <li class="question">あいさつ</li>
-              <li class="answer">こんにちは</li>
-              <li class="question"></li>
-              <li class="answer"></li>
-              <li class="question"></li>
-              <li class="answer"></li>
+            <ul class="hetCause-body">
+              <li class="question">からだ <i class="fa-solid fa-child-reaching"></i></li>
+              <li class="answer">
+                高齢者<br>乳児<br>肥満の方<br>脱水状態<br>（下痢や嘔吐、インフルエンザなど発熱、飲酒後）<br>低栄養状態<br>
+              </li>
             </ul>
 
-            <ul class="hetCause-pink">
-              <h3>重症</h3>
-              <li class="question"></li>
-              <li class="answer"></li>
-              <li class="question"></li>
-              <li class="answer"></li>
-              <li class="question"></li>
-              <li class="answer"></li>
+            <ul class="hetCause-action">
+              <li class="question">行動　<i class="fa-solid fa-person-running"></i></li>
+              <li class="answer">
+                激しい運動、慣れない運動<br>長時間の屋外作業<br> 水分補給できない状況<br>
+              </li>
             </ul>
 
           </div>
@@ -95,14 +88,28 @@
       <!--section02-->
       <!-- 2,熱中症になってしまったら -->
       <section class="ntu-main">
-        <h2>熱中症になってしまったら</h2>
-        <img src="./img/taoreta.png" alt="">
-        <img src="./img/bikuri.png" alt="">
-        <p>① 涼しい場所へ避難させてください。</p>
-        <p> ② 衣服を脱がせ、体を冷やしてください。</p>
-        <p> ③ 水分・塩分を補給してください。</p>
-        →意識が悪い。症状が改善しない。などが見られれば医療機関を受診しまし
-        ょう。</p>
+        <h2>熱中症になってしまったら・・・熱中症の人を見かけたら・・・</h2>
+        <img class="ntu-main-1" src="./img/taoreta 1.22.14.png" alt="">
+        <img class="ntu-main-2" src="./img/bikuri.png" alt="">
+        <div class="ntu-slick">
+          <img src="./img/hikage.jpeg" alt="hikage">
+          <img src="./img/hiyasu2.jpeg" alt="">
+          <img src="./img/suibunnhokyuu.jpeg" alt="suibun">
+        </div>
+        <div class="nts-severity">
+          <ul class="nts-severity-container">
+            <li class="nts-severity-question">軽症</li>
+            <li class="nts-severity-list">
+              めまい<br>
+              たちくらみ<br>
+              生あくび<br>
+              大量の汗<br>
+              筋肉痛<br>
+              こむら返り（足がつる）<br>
+            </li>
+          </ul>
+
+        </div>
       </section>
       <!-- pa -->
     </div>
@@ -112,6 +119,7 @@
       <section class="prevention-main">
         <!-- 3,予防策 -->
         <h2>熱中症予防</h2>
+        <img src="./img/heatstroke_sick.jpeg" alt="">
         <p>① 高温・多湿を避ける</p>
         <p>② 強い日差しは避ける</p>
         <p>③ こまめな水分補給</p>
@@ -218,6 +226,7 @@
   </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./script.js"></script>
   <script src="./jquery.pagepiling.min.js"></script>
 
