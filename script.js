@@ -6,7 +6,6 @@ $(function(){
     $(this).toggleClass('on');
   })
 
-console.log('Hello world');
 
 $('#pagepiling').pagepiling({
   menu: '#menu',
@@ -22,4 +21,3 @@ $('#pagepiling').pagepiling({
 
 
 // 大外のカッコ
-})
