@@ -31,7 +31,13 @@
   margin: 0 30px;
 }
 
+.bg {
+  background-image: url(../img/sun.jpeg);
+  background-size: cover;
+}
+
 .het_container {
+  border: solid 1px black;
   height: 100vh;
   display: flex;
   justify-content: center;

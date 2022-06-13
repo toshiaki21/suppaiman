@@ -37,7 +37,14 @@
 
 
 // 1,熱中症とは？原因
+.bg{
+  background-image: url(../img/sun.jpeg);
+  background-size: cover;
+}
+
 .het_container {
+  border: solid 1px black;
+
   height: 100vh;
   display: flex;
   justify-content: center;
