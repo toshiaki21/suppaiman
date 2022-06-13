@@ -68,11 +68,20 @@
 
 .hetCause-yellow {
   background-color: yellow;
-  border: solid 1px orange;
+}
+
+.hetCause-yellow .question, .hetCause-yellow .answer {
+  border: solid 1px black;
+  background-color: #e5ad46;
 }
 
 .hetCause-pink {
   background-color: pink;
+}
+
+.hetCause-pink .question, .hetCause-pink .answer {
+  border: solid 1px black;
+  background-color: palevioletred;
 }
 
 .question, .answer {
@@ -117,7 +126,6 @@
 
 .answer {
   display: none;
-  background-color: #b7b557;
 }
 
 .ntu-main {

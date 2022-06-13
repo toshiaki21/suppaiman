@@ -79,11 +79,20 @@
 .hetCause{
   &-yellow{
     background-color: yellow;
-    border: solid 1px orange;
-    
+
+    .question,.answer{
+      border: solid 1px black;
+      background-color: rgb(229, 173, 70);
+    }
+
   }
   &-pink{
-    background-color: pink;
+    background-color:pink;
+
+    .question,.answer{
+      border: solid 1px black;
+      background-color: palevioletred;
+    }
   }
 }
 
@@ -130,7 +139,6 @@
 
 .answer{
     display: none;
-    background-color: rgb(183, 181, 87);
 }
 
 
