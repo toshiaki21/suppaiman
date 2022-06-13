@@ -188,26 +188,26 @@
 
 // 重症度分類
 .nts-severity {
-  border: solid 1px black;
-  background-color: white;
+  // border: solid 1px black;
   border-radius: 20px;
   padding: 20px 30px;
-  margin: 0 50px 0 700px;
+  width: 300px;
+  position: absolute;
+  left: 55%;
 
-  &-question {
+  &-list1 {
     position: relative;
     cursor: default;
     border: solid 1px blue;
     border-radius: 10px;
     background-color: orange;
     height: 40px;
-    width: 250px;
+    width: 400px;
     padding: 5px;
-    margin: 5px auto;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
  
-  }
 
     &::after {
       width: 20px;
@@ -237,13 +237,12 @@
     background-color: rgb(230, 227, 63);
     border: solid 1px blue;
     border-radius: 10px;
-    height: 200px;
-    width: 250px;
+    width: 400px;
     padding: 10px;
     margin: 5px auto;
     font-weight: bold;
   }
-
+}
   .nts-severity-question.on::before {
     display: none;
   }

@@ -176,13 +176,62 @@
 }
 
 .nts-severity {
-  border: solid 1px black;
-  background-color: white;
   border-radius: 20px;
-  height: 300px;
-  width: 300px;
   padding: 20px 30px;
-  margin: 0 30px;
+  width: 300px;
+  position: absolute;
+  left: 55%;
+}
+
+.nts-severity-list1 {
+  position: relative;
+  cursor: default;
+  border: solid 1px blue;
+  border-radius: 10px;
+  background-color: orange;
+  height: 40px;
+  width: 400px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nts-severity-list1::after {
+  width: 20px;
+  height: 2px;
+  right: 10px;
+  top: 45%;
+  content: '';
+  display: block;
+  background-color: blue;
+  position: absolute;
+}
+
+.nts-severity-list1::before {
+  width: 2px;
+  height: 20px;
+  right: 19px;
+  top: 25%;
+  content: '';
+  display: block;
+  background-color: blue;
+  position: absolute;
+}
+
+.nts-severity-list {
+  display: none;
+  background-color: #e6e33f;
+  border: solid 1px blue;
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px;
+  margin: 5px auto;
+  font-weight: bold;
+}
+
+.nts-severity-question.on::before {
+  display: none;
 }
 
 .container {

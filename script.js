@@ -6,6 +6,14 @@ $(function () {
     $(this).toggleClass('on');
   })  
 
+  // 2,熱中症になってしまったら
+  $(".nts-severity-list1").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('on');
+  })  
+
+  $(".ntu-slick").slick();
+
   $('#pagepiling').pagepiling({
     sectionSelector: '.section',
     menu: '#menu',
@@ -17,7 +25,7 @@ $(function () {
     scrollingSpeed: 500,
   });
 
-$(".ntu-slick").slick();
+
 
 // 大外のカッコ
 });
