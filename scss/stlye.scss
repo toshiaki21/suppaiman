@@ -37,27 +37,53 @@
 
 
 // 1,熱中症とは？原因
-.bg{
-  text-align: center;
-}
-
-.het_container {
-  border: solid 1px black;
-  height: 100vh;
+.main_cause{
   display: flex;
-  justify-content: center;
-  
-  img {
-    height: 300px;
+  padding: 30px;
+  height: 100vh;
+
+  p{
+    font-size: 20px;
+    font-weight: 400;
   }
 }
 
-.hetCause {
+.bg{
+  text-align: center;
+
+
+  img {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+}
+
+.het_container {
+  // border: solid 1px black;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.hetCause,
+.hetCause-yellow,
+.hetCause-pink{
   border: solid 1px black;
   border-radius: 20px;
-  height: 500px;
+  height: 400px;
   width: 300px;
-  padding: 30px 20px;
+  padding: 30px 30px;
+}
+
+.hetCause{
+  &-yellow{
+    background-color: yellow;
+  }
+  &-pink{
+    background-color: pink;
+  }
+}
 
   .question,.answer{
     border: solid 1px blue;
@@ -65,6 +91,9 @@
     background-color: aquamarine;
     height: 50px;
     width: 250px;
+    padding: 10px;
+    font-weight: bold;
+    
   }
   .question{
     position: relative;
@@ -73,7 +102,7 @@
 
 .question::after,.question::before{
     content: '';
-    // display: block;
+    display: block;
     background-color: blue;
     position: absolute;
 }
@@ -101,13 +130,14 @@
     display: none;
     background-color: rgb(183, 181, 87);
 }
-}
 
 
 
 // 2,熱中症になってしまったら
-.ntumain {
+.ntu-main {
+  margin-top: 50px;
   border: solid 1px black;
+  height: 100vh;
 
   img {
     height: 200px;
