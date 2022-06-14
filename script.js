@@ -21,9 +21,9 @@ $(function () {
     anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
     navigation: {
       'position': 'right',
-      'tooltips': ['熱中症とは？', '熱中症になってしまったら', '熱中症予防', '熱中症予防おすすめアイテム', '一押しアイテム']
-    },
+      'tooltips': ['熱中症とは？', '熱中症になってしまったら', '熱中症予防', '熱中症予防おすすめアイテム', '一押しアイテム'],
     scrollingSpeed: 500,
+    },
   });
 
 

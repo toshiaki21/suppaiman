@@ -42,6 +42,7 @@
 
 .main_cause {
   padding: 20px 30px;
+  width: 100vw;
   height: 85vh;
   display: flex;
 }
@@ -303,8 +304,8 @@
   bottom: 20px;
   left: 50%;
   width: 16rem;
-  font-family: FontAwesome;
-  content: "" " 会社情報";
+  font-family: "FontAwesome";
+  content: '\f13a' "会社情報";
   transform: translate(-50%, 0);
   letter-spacing: 0.05em;
   color: red;
@@ -328,8 +329,8 @@
 }
 
 .cp_box input:checked + label:after {
-  font-family: FontAwesome;
-  content: "" " 閉じる";
+  font-family: "FontAwesome";
+  content: '\f139' "閉じる";
 }
 
 .cp_box input:checked ~ .cp_container {

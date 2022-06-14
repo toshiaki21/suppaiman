@@ -46,6 +46,7 @@
 // 1,熱中症とは？原因
 .main_cause {
   padding: 20px 30px;
+  width: 100vw;
   height: 85vh;
   display: flex;
 
@@ -309,6 +310,7 @@
     .cp_box input:checked + label {
       background: inherit; /* 開いた時にグラデーションを消す */
     }
+
     .cp_box label:after {
       line-height: 2.5rem;
       position: absolute;
@@ -316,14 +318,15 @@
       bottom: 20px;
       left: 50%;
       width: 16rem;
-      font-family: FontAwesome;
-      content: '\f13a'' 会社情報';
+      font-family: "FontAwesome";
+      content: '\f13a' "会社情報";
       transform: translate(-50%, 0);
       letter-spacing: 0.05em;
       color: red;
       border-radius: 20px;
       background-color: yellow;
     }
+
     .cp_box input {
       display: none;
     }
@@ -335,10 +338,12 @@
     .cp_box input:checked + label {
       /* display: none ; 閉じるボタンを消す場合解放 */
     }
+    
     .cp_box input:checked + label:after {
-      font-family: FontAwesome;
-      content: '\f139'' 閉じる';
+      font-family: "FontAwesome";
+      content: '\f139' "閉じる";
     }
+    
     .cp_box input:checked ~ .cp_container {
       height: auto;
       padding-bottom: 80px; /* 閉じるボタンのbottomからの位置 */
