@@ -270,28 +270,20 @@
       display: flex;
       margin: 30px 30px 30px 30px;
 
-      .suppai-left{
-          overflow: visible;
-          width: 100%;
-          height: 100%;
-          }
+    .suppai-left img{
+      transition:1s all;
+    } 
 
-          #suppaiman {
-          display: block;
-          transition-duration: 0.5s;
-          }
-
-          #suppaiman:hover {
-          transform: scale(1.2,1.2);
-          transition-duration: 0.5s;
-          }
-      }
-
+    .suppai-left img:hover{
+      transform:scale(1.2,1.3);
+      transition:1s all;
+    }
+      
       .suppai-right {
-        margin-left: 50px;
+        margin-left: 70px;
       } 
   
-
+    }
 
 
 

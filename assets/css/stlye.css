@@ -257,24 +257,17 @@
   margin: 30px 30px 30px 30px;
 }
 
-.suppai-container .suppai-left {
-  overflow: visible;
-  width: 100%;
-  height: 100%;
+.suppai-container .suppai-left img {
+  transition: 1s all;
 }
 
-.suppai-container #suppaiman {
-  display: block;
-  transition-duration: 0.5s;
+.suppai-container .suppai-left img:hover {
+  transform: scale(1.2, 1.3);
+  transition: 1s all;
 }
 
-.suppai-container #suppaiman:hover {
-  transform: scale(1.2, 1.2);
-  transition-duration: 0.5s;
-}
-
-.suppai-right {
-  margin-left: 50px;
+.suppai-container .suppai-right {
+  margin-left: 70px;
 }
 
 .cp_box *, .cp_box *:before, .cp_box *:after {
