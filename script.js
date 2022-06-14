@@ -14,6 +14,7 @@ $(function () {
 
   $(".ntu-slick").slick();
 
+  //pagepiling 
   $('#pagepiling').pagepiling({
     sectionSelector: '.section',
     menu: '#menu',
@@ -25,7 +26,11 @@ $(function () {
     scrollingSpeed: 500,
   });
 
- 
+
+  //スッパイマン
+  
+
+
   // go to top 
   $('.go-top-btn').on('click',function(){
     $('html,body').animate({'scrollTop':0},1000); 

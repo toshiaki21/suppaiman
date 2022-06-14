@@ -257,7 +257,23 @@
   margin: 30px 30px 30px 30px;
 }
 
-.suppai-container .suppai-right {
+.suppai-container .suppai-left {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+}
+
+.suppai-container #suppaiman {
+  display: block;
+  transition-duration: 0.5s;
+}
+
+.suppai-container #suppaiman:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 0.5s;
+}
+
+.suppai-right {
   margin-left: 50px;
 }
 

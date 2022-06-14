@@ -270,12 +270,30 @@
       display: flex;
       margin: 30px 30px 30px 30px;
 
+      .suppai-left{
+          overflow: visible;
+          width: 100%;
+          height: 100%;
+          }
+
+          #suppaiman {
+          display: block;
+          transition-duration: 0.5s;
+          }
+
+          #suppaiman:hover {
+          transform: scale(1.2,1.2);
+          transition-duration: 0.5s;
+          }
+      }
+
       .suppai-right {
         margin-left: 50px;
+      } 
+  
 
 
-      }
-    }
+
 
     // 続きを読む
     .cp_box *, .cp_box *:before, .cp_box *:after {
