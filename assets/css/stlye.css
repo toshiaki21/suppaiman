@@ -180,7 +180,8 @@
   padding: 20px 30px;
   width: 300px;
   position: absolute;
-  left: 55%;
+  left: 50%;
+  top: 20%;
 }
 
 .nts-severity-list1 {
@@ -189,7 +190,7 @@
   border: solid 1px blue;
   border-radius: 10px;
   background-color: orange;
-  height: 40px;
+  height: 50px;
   width: 400px;
   padding: 5px;
   font-size: 20px;
@@ -230,8 +231,16 @@
   font-weight: bold;
 }
 
+.nts-severity .fa-solid {
+  color: red;
+}
+
 .nts-severity-question.on::before {
   display: none;
+}
+
+.card-img-top {
+  height: 400px;
 }
 
 .container {
