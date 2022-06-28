@@ -3,8 +3,13 @@
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+#menu {
+  position: fixed;
+  margin: 0 auto;
+}
+
 .header {
-  height: 100px;
+  height: 200px;
   display: flex;
   align-items: center;
   padding: 20px;
@@ -24,20 +29,6 @@
 .header_left i {
   margin: 0 5px;
   color: blue;
-}
-
-.menubtn {
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
-  height: 30px;
-  background-color: #00c3ff;
-}
-
-.menubtn a {
-  margin: 0 10px;
-  padding: 5px;
-  color: #fff;
 }
 
 .main_cause {
