@@ -21,7 +21,7 @@
   <title>heatstroke</title>
 
   <!-- pagepiling -->
-  <link rel="stylesheet" href="./examples.css">
+  <!-- <link rel="stylesheet" href="./examples.css">  -->
   <link rel="stylesheet" href="./jquery.pagepiling.css">
 
   <!-- フォント -->
@@ -29,12 +29,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 
+<!-- slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 
 
 
 <body>
-  <!-- ヘッダー /メニューボタン -->
+  <div id="pagepiling">
+    <div class="section" id="section1">
+
+      <!--section01-->
+        <header class="header"> 
+        <!-- <div class="header_left">
+          <i class="fa-brands fa-twitter-square"></i>
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-instagram-square"></i> 
+        </div> -->
+        <img src="./img/heatstrokelogo.jpg" alt="heatstrokelogo"> 
+
+      </header>
+        <!-- ヘッダー /メニューボタン -->
   <ul id="menu">
     <li data-menuanchor="page1" class="active"><a href="#page1">熱中症とは？</a></li>
     <li data-menuanchor="page2"><a href="#page2">熱中症になってしまったら</a></li>
@@ -42,20 +58,6 @@
     <li data-menuanchor="page4"><a href="#page4">熱中症予防おすすめアイテム</a></li>
     <li data-menuanchor="page5"><a href="#page5">一押しアイテム</a></li>
   </ul>
-
-  <div id="pagepiling">
-    <div class="section" id="section1">
-
-      <!--section01-->
-      <header class="header">
-        <div class="header_left">
-          <i class="fa-brands fa-twitter-square"></i>
-          <i class="fa-brands fa-facebook-square"></i>
-          <i class="fa-brands fa-instagram-square"></i>
-        </div>
-        <img src="./img/heatstrokelogo.jpg" alt="heatstrokelogo">
-
-      </header>
 
       <!-- 1,熱中症とは？原因 -->
       <section class="main_cause">
@@ -97,8 +99,6 @@
       <!-- 2,熱中症になってしまったら -->
       <section class="ntu-main">
         <h2>熱中症になってしまったら・・・熱中症の人を見かけたら・・・</h2>
-        <img class="ntu-main-1" src="./img/taoreta 1.22.14.png" alt="">
-        <img class="ntu-main-2" src="./img/bikuri.png" alt="">
         <div class="ntu-slick">
           <img src="./img/hikage.jpeg" alt="hikage">
           <img src="./img/hiyasu2.jpeg" alt="">
@@ -180,7 +180,7 @@
       <!--section04-->
       <section>
         <!-- 4,おすすめアイテム -->
-        <h2>おすすめアイテム</h2>
+        <h2 class="ossume">おすすめアイテム</h2>
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -299,7 +299,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./script.js"></script>
-
+<!-- slick -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <!-- pagepiling -->
   <script src="./jquery.pagepiling.min.js"></script>
 </body>
 

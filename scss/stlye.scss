@@ -3,21 +3,40 @@
 }
 
 // ヘッダー 
+.section{
+  width: 100%;
+  height: 100%;
+}
+
 #menu{
-  position: fixed;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+	margin: 10px;
+	color: #000;
+	background-color:#08edf5;
+
+
+
+  li{
+    -webkit-border-radius: 1px;
+    border-radius: 8px;
+    background-color: #ffffff80;
+  }
+
+  a{
+    margin: 0 20px;
+  }
 }
 
 .header {
-  height: 200px;
+  height: 110px;
   display: flex;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
   width: 100vw;
 
   img {
     height: 100px;
-    margin: 0 350px;
   }
 
 }
@@ -35,13 +54,13 @@
 
 // 1,熱中症とは？原因
 .main_cause {
-  padding: 20px 30px;
+  padding: 13px 30px;
   width: 100vw;
-  height: 85vh;
+  height: 80vh;
   display: flex;
 
   &-pt {
-    height: 600px;
+    height: 500px;
 
   }
 }
@@ -50,7 +69,7 @@
   text-align: center;
 
   img {
-    height: 250px;
+    height: 220px;
     margin-bottom: 20px;
   }
 
@@ -74,7 +93,7 @@
   border: solid 1px black;
   background-color: rgb(25, 211, 195);
   border-radius: 20px;
-  height: 300px;
+  height: 250px;
   width: 300px;
   padding: 20px 30px;
   margin: 0 30px;
@@ -140,29 +159,13 @@
 // 2,熱中症になってしまったら
 .ntu {
   &-main {
-    margin-top: 50px;
     border: solid 1px black;
     height: 100vh;
-    width: 100vw;
+    // width: 100vw;
     background-image: url(../../img/sun.jpeg);
     background-size: cover;
-    position: relative;
-
-    &-1 {
-      position: absolute;
-      height: 300px;
-      left: 2%;
-      transform: scale(-1, 1);
-      top: -5%
-    }
-
-    &-2 {
-      position: absolute;
-      height: 150px;
-      left: 5%;
-      top: 72%;
-      transform: scale(-1, 1);
-    }
+    position: relative; 
+    margin: 0;
 
     h2 {
       text-align: center;
@@ -172,12 +175,17 @@
   }
 
   &-slick {
-    position: absolute;
-    height: 500px;
-    width: 500px;
-    left: 5%;
-    top: 35%;
-    // margin: 0 100px;
+    width:40vw;
+    margin: 300px 0 0 100px;
+    border: 10px ridge #FFC6AC;
+   
+
+    img{
+      position: absolute;
+      left: 20%;
+      // height: 500px;
+      // width: 300px;
+    }
   }
 }
 
@@ -246,14 +254,18 @@
     display: none;
   }
   
-  // 予防策
+  // おすすめアイテム
+  #section4 .ossume{
+    text-align: center;
+    margin-top: 20px;
+  }
   .card-img-top{
     height: 400px;
 
   }
     // Bootstrap
     .container {
-      margin: 50px 50px;
+     
     }
 
     // suppaiman
